@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson 5, Partner Lab 2</title>
+    <style></style>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Programs.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello <span id="spnUserName1">Guest</span>!</h1>
+      <div>
+        <p class="introduction">
+          <span id="spnUserName2"
+            >Welcome to My Website of "Change". Go ahead and enter your first
+            name, and add a statment in the fields below. Pick a color of your
+            choice and press "Enter."
+          </span>
+        </p>
+      </div>
+      <form>
+        <div>
+          <label for="tbxUserName"> First Name:</label>
+          <input type="text" name="userName" id="tbxUserName" />
+        </div>
+        <div>
+          <label for="tbxparagragh"> Change the Paragragh:</label>
+          <input type="text" name="paragraph" id="tbxparagraph" />
+        </div>
+        <br />
+      </form>
+      <br />
+      <div class="pageColor">
+        <div>
+          Page Color:
+          <select name="options" id="color">
+            <option value="steelblue">Steel Blue</option>
+            ;
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+            <option value="blue">Blue</option>
+            <option value="orange">Orange</option>
+          </select>
+        </div>
+
+        <input type="button" value="Enter" onclick="submitChange()" />
+      </div>
+    </div>
+  </body>
+</html>
